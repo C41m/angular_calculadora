@@ -38,4 +38,11 @@ export class MycalcComponent implements OnInit {
       this.inputStr.controls.text.setValue(newValue);
     }
   }
+
+  calculate() {
+    let result = eval(this.inputStr.controls.text.value)
+    this.inputStr.controls.text.setValue(result)
+
+  }
+  
 }

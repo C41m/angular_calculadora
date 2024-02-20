@@ -12,7 +12,7 @@
         <button class="btn" (click)="buttonClick($event.target)">-</button>
         <button class="btn" (click)="buttonClick($event.target)">*</button>
         <button class="btn" (click)="buttonClick($event.target)">/</button>
-        <button class="btn">=</button>
+        <button class="btn" (click)="calculate()">=</button>
       </div>
     </div>
     <div class="numbersrow">
@@ -20,7 +20,7 @@
         <button class="btn" (click)="buttonClick($event.target)">1</button>
         <button class="btn" (click)="buttonClick($event.target)">2</button>
         <button class="btn" (click)="buttonClick($event.target)">3</button>
-        <button class="btn" (click)="clearLast()">C</button>
+        <button class="btn" (click)="clearLast()">Del</button>
         <button class="btn" (click)="clearDisplay()">Clear</button>
       </div>
     </div>
@@ -30,6 +30,7 @@
         <button class="btn" (click)="buttonClick($event.target)">5</button>
         <button class="btn" (click)="buttonClick($event.target)">6</button>
         <button class="btn" (click)="buttonClick($event.target)">0</button>
+        <button class="btn" (click)="buttonClick($event.target)">(</button>
       </div>
     </div>
     <div class="numbersrow">
@@ -38,6 +39,7 @@
         <button class="btn" (click)="buttonClick($event.target)">8</button>
         <button class="btn" (click)="buttonClick($event.target)">9</button>
         <button class="btn" (click)="buttonClick($event.target)">.</button>
+        <button class="btn" (click)="buttonClick($event.target)">)</button>
       </div>
     </div>
   </div>
